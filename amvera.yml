@@ -1,13 +1,13 @@
----
 meta:
   environment: node
   toolchain:
     name: npm
-    version: 22
+    version: "22"
 build:
   skip: false
   artifacts:
-    '*': /
+    "*": /
+  additionalCommands: npm run build
 run:
   command: npm run start
   persistenceMount: /data
